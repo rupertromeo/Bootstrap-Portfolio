@@ -1,36 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap Portfolio</title>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html lang="en-us">
+  <head>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
+    <title>Bootstrap Portfolio</title>
 
-<body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <h3 class="navbar-name">Manuel Romo</h3>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-<div class="row">
-<div class="col-md-8">
-<div class="page-header">
-  <h1>About me</h1>
-</div>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Import our Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Permanent+Marker" rel="stylesheet">
 
+    <!-- Personalized CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
 
-</body>
+    
+  </head>
+
+  <body>
+    <!--This is the navbar-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!--This is a toggle section that appears to better suit a mobile format-->
+        <div class="row"></div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="">
+              <a class="navbar-name" href="#" id="MR">Manuel Romo</h3>
+            </div>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="wrap">
+        <div class="container">
+          <section class="row">
+            <div class="col-md-8">
+              <article class="about-me-content">
+                <h1 class="about-me-header">About Me</h1>
+                <hr class="about-me-hr"/>
+                <img src="assets/images/" alt="" id=""/>
+                <p>Close. It's gonna make your kidneys shut down. Not so fast Morty. You heard your mom. We've got adventures to go on, Morty. Just you and me. And sometimes your sister, and sometimes your mom, but never your dad. You wanna know why, Morty? Because he crossed me. Yea. If you spend all day shuffling words around you can make anything sound bad, Morty. I've replaced them both as the de facto patriarch of your family and your universe. Your mom wouldn't have accepted me if I came home without you and your sister, so now you know the real reason I rescued you. I just took over the family, Morty! And if you tell your mom or sister I said any of this, I'll deny it, and they'll take my side because I'm a hero, Morty! And now you're gonna have to go and do whatever I say, Morty! Forever!</p>
+                <br />
+                <p>An-and I-I-I'll go out and I'll find some more of that Mulan szechuan teriyaki dipping sauce, Morty! Th-b-because that's what this is all about Morty! Th-that's my one-armed man! I'm not driven by avenging my dead family, Morty, that was fake! I-I-I'm driven by finding that mcnuggut sauce! I want that Mulan mcnuggut sauce, Morty! That's my series arc, Morty! If it takes nine seasons, I want my mcnuggut dipping sauce szechuan sauce, Morty! That's what's gon-it's gonna take us all the way to the end, Morty! Season nine more seasons, Morty! Nine more seasons until I get that dipping szechuan sauce! For ninety-seven more years, Morty! I want that mcnuggut sauce Morty!</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+  
+              <!-- Side content with logo links -->
+              <section id="social-contact-area">
+                <div class="contact-content">
+                  <h1 class="contact-header">Connect With Me</h1>
+                  <hr />
+                  <div id="images">
+                    <img src="assets/images/github.png" alt="Github Cat logo" class="social-logo">
+                    <img src="assets/images/linkedin.png" alt="Linkedin logo" class="social-logo">
+                    <img src="assets/images/stackover2.png" alt="Stackoverflow logo" class="social-logo">
+                  </div>
+                </div>
+              </section>
+              
+  
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Start of footer -->
+      <footer class="footer">
+          <div class="two-toned-footer-color"></div>
+          <p class="text-info text-info-footer text-center">
+            &copy; Copyright 2017 Manuel Romo
+          </p>
+      </footer>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
 </html>
